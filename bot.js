@@ -1,3 +1,4 @@
+require('custom-env').env();
 const {
     Bot,
     Keyboard,
