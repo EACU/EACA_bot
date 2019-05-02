@@ -9,3 +9,6 @@ node_modules
 # files 
 yarn-error.log
 yarn.lock
+
+# meta
+.DS_Store
