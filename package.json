@@ -1,7 +1,10 @@
 {
   "name": "vk-bot-test",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "license": "MIT",
   "dependencies": {
     "custom-env": "^1.0.0",
