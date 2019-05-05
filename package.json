@@ -1,13 +1,16 @@
 {
   "name": "vk-bot-test",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "src/index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
-    "custom-env": "^1.0.0",
     "easyvk": "^2.4.12",
-    "text2png": "^2.1.0",
     "vk-bots": "^0.0.2",
-    "vk-io": "^4.0.0-rc.17"
+    "underscore": "^1.9.1",
+    "request-micro": "^1.5.1",
+    "date-fns": "^1.30.1"
   }
 }
