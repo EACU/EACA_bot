@@ -9,9 +9,9 @@ easyvk({
 	// const me = vk.session.group_id
 
 	// Обращаемся к методу messages.send с параметром user_id и message
-	vk.call('messages.send', {
-		user_id: 15696325,
-		message: 'че у тебя получилось бота запустить?' // Текст сообщения, по мануалу ВКонтакте
+	vk.call('messages.createChat', {
+		user_ids: [15696325,230868199]
+		title: 'Для тестов' // Текст сообщения, по мануалу ВКонтакте
 	}).then(({ vkr: response }) => {
 
 		// После выполнения запроса, ВКонтакте возвращает ответ

@@ -11,13 +11,17 @@ const rl = readline.createInterface({
 
 async function main (vk) {
 	console.log(vk.session);
-	vk.call("wall.post", {
-		owner_id: process.env.EACA_MEMES,
-		from_group: 1,
-		signed: 0,
-		message: `
-		Ну приветики
-		`,
+	// vk.call("wall.post", {
+	// 	owner_id: process.env.EACA_MEMES,
+	// 	from_group: 1,
+	// 	signed: 0,
+	// 	message: `
+	// 	Ну приветики
+	// 	`,
+	// }, "POST")
+	vk.call("messages.createChat", {
+		user_ids: [15696325,230868199,-166176986],
+		title: 'Для тестов',
 	}, "POST")
 
 }
