@@ -1,14 +1,18 @@
 # dir
 node_modules
+.vscode
 
 # settings
 .env
 .jshintignore
 .jshintrc
+.glitch-assets
+
 
 # files 
 yarn-error.log
 yarn.lock
+shrinkwrap.yaml
 
 # meta
 .DS_Store
