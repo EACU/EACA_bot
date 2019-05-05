@@ -62,7 +62,7 @@ easyvk({
     }) => {
 
       // console.log(Response[0].first_name);
-      message.reply(`Привет ${Response[0].first_name}! это бот для еаси, напиши ему \n "/расписание" и группу через пробел. \n например: /расписание 125`);
+      message.reply(`Привет ${Response[0].first_name}! это бот для еаси, напиши ему \n /расписание и группу через пробел. \n например: /расписание 125`);
     });
     // bot.addReceivers([Profile]);
   });
