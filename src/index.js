@@ -36,7 +36,7 @@ easyvk({
   // За-одно vk-bots авторизуем возможно тут лучше через что то одно авторизоваться т.к vk-bots это надстройка над easyvk
   // Нам нужен то только функционал всяких запросов .call .is 
   // надо короче подумать как лучше сделать
-  
+  // console.log(vk.session.group_name);
   let bot = new Bot({
       token: process.env.TOKEN // access_token вашей группы
   });
@@ -46,7 +46,7 @@ easyvk({
     // console.log(message.text);
     
     // Тоже не совсем понятно зачем делать запрос на страницу пользователя наверное 
-    // чтобы узнать его имя, можно и объектом message обойтись   
+    // чтобы узнать его имя, можно и объектом message обойтись или узнать че там вообще внутри него полезного есть
     
     vk.call('users.get',{
         user_id: message.from_id
@@ -60,8 +60,12 @@ easyvk({
   
   bot.command('/расписание', async (message) => {
     // console.log(listAllProperties(message));
-    var day_now = format(message.date*1000)  
+    var day_now = format(message.date*1000); //Получаем время из диалога что бы узнать какой сейчас день
+    var additional_info= [];
     
+    if (getDay(day_now)==0){
+      additional_info.push("Сегодня выходной! \n");
+    }
     // Запрос к апи расписанию
     var opts = {
       method: 'GET',
@@ -85,7 +89,7 @@ easyvk({
       });
       
       //Присылаем расписос
-      message.reply("День: "+data.day + '\n \n' + this_day.join(""));
+      message.reply(additional_info +"День: "+data.day + '\n \n' + this_day.join(""));
     })
   });
   
@@ -96,5 +100,5 @@ easyvk({
   // bot.addReceivers([Profile]);
   
   bot.start();
-  console.log('Бот запущен!');
+  console.log(`Бот ${vk.session.group_name} запущен!`);
 })
