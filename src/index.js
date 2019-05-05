@@ -62,14 +62,16 @@ easyvk({
     // console.log(listAllProperties(message));
     var day_now = format(message.date*1000); //Получаем время из диалога что бы узнать какой сейчас день
     var additional_info= [];
-    
-    if (getDay(day_now)==0){
-      additional_info.push("Сегодня выходной! \n");
+    var Day_now = getDay(day_now);
+    //Костыль! потому что правильно было бы что бы 0- воскресенье
+    if (Day_now==0){
+      Day_now =+1; 
+      additional_info.push("✨✨Сегодня выходной!✨✨ \n \n");
     }
     // Запрос к апи расписанию
     var opts = {
       method: 'GET',
-      url: `https://eaca.azurewebsites.net/api/schedule/${message.text.split(" ")[1]}/odd/${getDay(day_now)}`, // Смотрим группи и номер дня
+      url: `https://eaca.azurewebsites.net/api/schedule/${message.text.split(" ")[1]}/odd/${Day_now-1}`, // Смотрим группи и номер дня
       body: {
         key: 'value'
       },
@@ -88,7 +90,7 @@ easyvk({
         }
       });
       
-      //Присылаем расписос
+      //Присылаем расписос: Дополнительно информацию + День: {Сегодняшний день} + время-название-пары
       message.reply(additional_info +"День: "+data.day + '\n \n' + this_day.join(""));
     })
   });
