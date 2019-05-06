@@ -12,6 +12,7 @@ node_modules
 # files 
 file.jpg
 yarn-error.log
+package-lock.json
 yarn.lock
 shrinkwrap.yaml
 src/font/index.js
