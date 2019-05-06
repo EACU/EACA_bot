@@ -14,6 +14,7 @@ file.jpg
 yarn-error.log
 yarn.lock
 shrinkwrap.yaml
+src/font/index.js
 
 # meta
 .DS_Store
