@@ -1,6 +1,7 @@
 # 🤖[Бот ВК](https://glitch.com/~belvedersky-eaca-bot) 
-#### glitch.com/~belvedersky-eaca-bot
-будить тут belvedersky-eaca-bot.glitch.me 
+* бот работает на [glitch](glitch.com/~belvedersky-eaca-bot)
+* будить тут [eaca-bot.glitch.me](belvedersky-eaca-bot.glitch.me ) 
+* писать боту сюда [vk.com/eaca_memes](https://vk.com/eaca_memes)
 ___
 ## Умеет сейчас
 1. Отправлять расписание по комманде [/расписание](src/Commands/ScheduleCommand.js) [группа]
