@@ -10,6 +10,7 @@ node_modules
 
 
 # files 
+file.jpg
 yarn-error.log
 yarn.lock
 shrinkwrap.yaml

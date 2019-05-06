@@ -12,6 +12,7 @@
     "node-fetch": "^2.5.0",
     "underscore": "^1.9.1",
     "vk-bots": "^0.0.2",
-    "text2png": "^2.1.0"
+    "text2png": "^2.1.0",
+    "word-wrap": "^1.2.3"
   }
 }
