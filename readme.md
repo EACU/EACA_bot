@@ -1,6 +1,6 @@
 # 🤖 [Бот ВК](https://glitch.com/~belvedersky-eaca-bot) 
-* бот работает на [glitch](glitch.com/~belvedersky-eaca-bot)
-* будить тут [eaca-bot.glitch.me](belvedersky-eaca-bot.glitch.me ) 
+* бот работает на [glitch](https://glitch.com/~belvedersky-eaca-bot) для тестов
+* будить тут [eaca-bot.glitch.me](https://belvedersky-eaca-bot.glitch.me )
 * писать боту сюда [vk.com/eaca_memes](https://vk.com/eaca_memes)
 ___
 ## Умеет сейчас
