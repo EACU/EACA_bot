@@ -1,4 +1,4 @@
-# 🤖 [Бот ВК](https://glitch.com/~belvedersky-eaca-bot)
+# 🤖 [Бот ВК](https://glitch.com/~belvedersky-eaca-bot) 
 * бот работает на [glitch](glitch.com/~belvedersky-eaca-bot)
 * будить тут [eaca-bot.glitch.me](belvedersky-eaca-bot.glitch.me ) 
 * писать боту сюда [vk.com/eaca_memes](https://vk.com/eaca_memes)
@@ -34,15 +34,15 @@ ___
 ## Использованные библиотеки
 
 #### Для работы с VK
-> [Easy VK](https://ciricc.github.io) Надстройка над api vk
-> [vk-bots](https://github.com/ciricc/vk-bots) Надстройка над easyvk )))
+> * [Easy VK](https://ciricc.github.io) Надстройка над api vk
+> * [vk-bots](https://github.com/ciricc/vk-bots) Надстройка над easyvk )))
 
 #### Для работы с текстом и изображениями
-> [text2png](https://github.com/tkrkt/text2png) Создание изображения из текста
-> [word-wrap](https://github.com/jonschlinkert/word-wrap) Для переноса строки
+> * [text2png](https://github.com/tkrkt/text2png) Создание изображения из текста
+> * [word-wrap](https://github.com/jonschlinkert/word-wrap) Для переноса строки
 
 #### Общего назначения
-> [node-fetch](https://github.com/bitinn/node-fetch) Запросы
-> [underscore](http://underscorejs.ru) Утилиты
-> [date-fns](https://github.com/date-fns/date-fns) Время/Дата
+> * [node-fetch](https://github.com/bitinn/node-fetch) Запросы
+> * [underscore](http://underscorejs.ru) Утилиты
+> * [date-fns](https://github.com/date-fns/date-fns) Время/Дата
 
