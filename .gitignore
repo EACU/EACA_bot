@@ -10,9 +10,14 @@ node_modules
 
 
 # files 
+file.jpg
 yarn-error.log
 yarn.lock
+package-lock.json
 shrinkwrap.yaml
+src/font/index.js
+shrinkwrap.yaml
+
 
 # meta
 .DS_Store
